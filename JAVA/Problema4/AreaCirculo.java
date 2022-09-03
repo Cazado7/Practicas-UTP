@@ -1,4 +1,4 @@
-package Problemas_Practica.Problema4;
+package Problemas_Practica.JAVA.Problema4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 public class AreaCirculo {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Metodos objAreaP = new Metodos();
+        Problemas_Practica.Problema4.Metodos objAreaP = new Problemas_Practica.Problema4.Metodos();
         //esto es una instancia para poder formatear los numeros decimales
         DecimalFormat df = new DecimalFormat("#####.##");
         double radio;

@@ -1,4 +1,4 @@
-package Problemas_Practica.Problema6;
+package Problemas_Practica.JAVA.Problema6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ public class CambioMonedaMain {
         double pesos;
         System.out.println("Ingrese la cantidad de pesos colombianos: ");
         pesos= Double.parseDouble(br.readLine());
-        CambioMoneda cm = new CambioMoneda(pesos);
+        Problemas_Practica.Problema6.CambioMoneda cm = new Problemas_Practica.Problema6.CambioMoneda(pesos);
         System.out.println("el precio del cambio es:"+cm.cacularCambioMenda());
 
 
