@@ -13,13 +13,15 @@ public class MainAsignaturas {
         aprobados = Double.parseDouble(br.readLine());
         System.out.println("favor ingrese la cantidad de estudiantes reprobados: ");
         reprobados = Double.parseDouble(br.readLine());
-        System.out.println("favor ingres la cantidad de estudiantes sobresalientes: ");
+        System.out.println("favor ingrese la cantidad de estudiantes sobresalientes: ");
         sobresalientes = Double.parseDouble(br.readLine());
 
         objEntrada.asignar(aprobados, reprobados, sobresalientes);
 
-        System.out.println("la el porcentaje de alumnos aprobados fue del: "+objEntrada.calculoAprobados()+"%");
-        System.out.println("la el porcentaje de alumnos reprobados fue del: "+objEntrada.calculoReprobados()+"%");
-        System.out.println("la el porcentaje de alumnos sobresalientes fue del: "+objEntrada.calculoSobresalientes()+"%");
+        //----------PRUEBA-----------
+        System.out.println("El total de alumnos fue de: "+objEntrada.diferencia());
+
+        System.out.println("el porcentaje de alumnos aprobados fue del: "+objEntrada.calculoAprobados()+"%");
+        System.out.println("el porcentaje de alumnos reprobados fue del: "+objEntrada.calculoReprobados()+"%");
     }
 }

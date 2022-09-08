@@ -21,22 +21,25 @@ public class MetodosAsignatura {
     }
 
     //------Metodo de calulo para aprobados--------
-    public double calculoAprobados(){
+    public double calculoAprobados() {
         double res;
-        res = (alumnosPass + alumOver +alumBad)*alumnosPass;
+        res = (calculo11() * (alumnosPass + alumOver)) / calculo11();
         return res;
     }
-    //------Metodo de calculo de reprobados------
-    public double calculoReprobados(){
-        double res1;
-        res1 = (alumnosPass + alumOver +alumBad)*alumBad;
-        return res1;
+    public double calculoReprobados() {
+        double res;
+        res = (calculo11() * alumBad) / calculo11();
+        return res;
     }
-    //------Metodos de calculo de sobresalientes--------
-    public double calculoSobresalientes(){
-        double res2;
-        res2 = (alumnosPass + alumOver +alumBad)*alumOver;
-        return res2;
+    public double diferencia(){
+        double res;
+        res = calculoAprobados()+calculoReprobados();
+        return res;
+    }
+    public double calculo11(){
+        double res;
+        res= alumnosPass + alumOver +alumBad;
+        return res;
     }
 
 
